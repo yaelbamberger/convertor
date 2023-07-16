@@ -1,0 +1,51 @@
+$color-text: #ffffff;
+$color-background: #7998f5;
+$color-highlight: #96c0e4;
+
+/*--------------------------------
+ Functional Styles (Required)
+---------------------------------*/
+
+header { position: relative; }
+#toggle, .toggle { display: none; }
+.menu > li { list-style: none; float:left;	}
+
+
+
+/*--------------------------------
+ Presentation Styles (Editable)
+---------------------------------*/
+
+header {
+	min-height: 4.5em;
+	height: 100%;
+	padding: 0 2em;
+	background: $color-background;
+}
+
+
+nav { 
+	display: block; 
+	float: left; 
+}
+
+
+a{
+	display: block;
+	padding: 1.5em;
+	color: $color-text;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box; 
+	box-sizing: border-box;
+	
+}
+
+a:focus{
+	background: $color-text;
+	box-shadow: inset 0px 5px $color-highlight;
+	color: $color-highlight;
+	padding: 1.75em 1.5em;
+}
+
+.toggle { z-index: 2; }
+
